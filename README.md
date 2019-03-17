@@ -4,8 +4,8 @@ FlexGet Docker Image
 FlexGet in a Docker container, with configuration in a volume, and a configurable UID/GID for said files.
 
 [![](https://img.shields.io/github/tag/wastrachan/docker-flexget.svg)](https://github.com/wastrachan/docker-flexget/releases)
-[![](https://images.microbadger.com/badges/image/wastrachan/docker-flexget.svg)](https://microbadger.com/images/wastrachan/docker-flexget)
-[![](https://img.shields.io/docker/pulls/wastrachan/docker-flexget.svg)](https://hub.docker.com/r/wastrachan/docker-flexget)
+[![](https://images.microbadger.com/badges/image/wastrachan/flexget.svg)](https://microbadger.com/images/wastrachan/flexget)
+[![](https://img.shields.io/docker/pulls/wastrachan/flexget.svg)](https://hub.docker.com/r/wastrachan/flexget)
 
 ## Install
 
