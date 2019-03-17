@@ -18,6 +18,9 @@ if [ ! -f "/config/config.yml" ]; then
     cp /defaults/config.yml /config/config.yml
 fi
 
+# Clear "config lock", if it exists
+rm -f /config/.config-lock
+
 # Set UID/GID of user
 sed -i "s/^flexget\:x\:100\:101/flexget\:x\:$PUID\:$PGID/" /etc/passwd
 sed -i "s/^flexget\:x\:101/flexget\:x\:$PGID/" /etc/group

@@ -30,4 +30,4 @@ RUN \
     rm -rf /flexget /flexget.tar.gz
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
-CMD ["su", "-p", "-s", "/bin/sh", "flexget", "-c", "/usr/local/bin/flexget -c /config/config.yml --loglevel verbose execute"]
+CMD ["su", "-p", "-s", "/bin/sh", "flexget", "-c", "/usr/local/bin/flexget -c /config/config.yml --loglevel verbose daemon start --autoreload-config"]
