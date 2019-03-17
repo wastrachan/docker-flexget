@@ -71,7 +71,7 @@ The main config file for FlexGet is `config.yml`, and will be created automatica
 
 
 #### User / Group Identifiers
-If you'd like to override the UID and GID of the `{{ program }}` process, you can do so with the environment variables `PUID` and `PGID`. This is helpful if other containers must access your configuration volume.
+If you'd like to override the UID and GID of the `flexget` process, you can do so with the environment variables `PUID` and `PGID`. This is helpful if other containers must access your configuration volume.
 
 #### Volumes
 Volume          | Description
