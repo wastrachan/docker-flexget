@@ -22,6 +22,10 @@ RUN \
     cd flexget && \
     python3 setup.py install && \
     \
+    # Install python dependencies
+    pip install deluge-client && \
+    pip install transmissionrpc && \
+    \
     # Clean up build files, deps
     rm -rf /flexget /flexget.tar.gz
 

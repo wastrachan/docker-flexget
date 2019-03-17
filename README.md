@@ -52,7 +52,7 @@ If you wish to run this image with docker-compose, an example `docker-compose.ym
 version: "2"
 
 services:
-  bind:
+  flexget:
     image: wastrachan/flexget
     container_name: flexget
     environment:
@@ -67,7 +67,7 @@ services:
 ## Configuration
 Configuration files are stored in the `/config` volume. You may wish to mount this volume as a local directory, as shown in the examples above.
 
-The main config file for FlexGet is `config.yml`, and will be created automatically if the container is started without a config file present. Please review the [FlexGet docs](https://flexget.com/Configuration) for more information. 
+The main config file for FlexGet is `config.yml`, and will be created automatically if the container is started without a config file present. Please review the [FlexGet docs](https://flexget.com/Configuration) for more information.
 
 
 #### User / Group Identifiers
