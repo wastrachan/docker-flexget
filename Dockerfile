@@ -2,7 +2,7 @@ FROM python:3-alpine
 LABEL maintainer="Winston Astrachan"
 LABEL description="FlexGet on Alpine Linux"
 
-ARG FLEXGET_VERSION="2.20.25"
+ARG FLEXGET_VERSION="2.20.27"
 
 RUN addgroup -g 101 -S flexget && \
     adduser -u 100 -S -G flexget flexget
