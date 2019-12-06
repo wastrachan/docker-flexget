@@ -2,7 +2,7 @@ FROM python:3.7-alpine
 LABEL maintainer="Winston Astrachan"
 LABEL description="FlexGet on Alpine Linux"
 
-ARG FLEXGET_VERSION="2.21.32"
+ARG FLEXGET_VERSION="3.0.12"
 
 RUN addgroup -g 101 -S flexget && \
     adduser -u 100 -S -G flexget flexget
@@ -14,7 +14,7 @@ VOLUME /config
 VOLUME /download
 
 COPY overlay/ /
-ADD https://github.com/Flexget/Flexget/tarball/${FLEXGET_VERSION} flexget.tar.gz
+ADD https://github.com/Flexget/Flexget/tarball/v${FLEXGET_VERSION} flexget.tar.gz
 RUN \
     # Extract and install FlexGet
     mkdir flexget && \
