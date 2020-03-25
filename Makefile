@@ -1,7 +1,6 @@
 # Docker FlexGet Image
-#
-# Winston Astrachan 2019
-#
+# Copyright (c) Winston Astrachan 2020
+
 help:
 	@echo ""
 	@echo "Usage: make COMMAND"
