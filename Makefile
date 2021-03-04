@@ -1,5 +1,5 @@
 # Docker FlexGet Image
-# Copyright (c) Winston Astrachan 2020
+# Copyright (c) Winston Astrachan 2021
 
 help:
 	@echo ""
@@ -27,6 +27,7 @@ run: build
 	           --name flexget \
 	           -e PUID=1111 \
 	           -e PGID=1112 \
+	           -e TZ=US/Eastern \
 	           --restart unless-stopped \
 	           -d \
 	           wastrachan/flexget:latest
