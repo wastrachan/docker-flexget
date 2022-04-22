@@ -4,7 +4,7 @@ jobs:
     environment:
       REPO_NAME: "wastrachan"
       IMAGE_NAME: "flexget"
-      IMAGE_VERSION: "3.3.4"
+      IMAGE_VERSION: "3.3.8"
     docker:
       - image: docker:latest
     steps:
