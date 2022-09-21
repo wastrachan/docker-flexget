@@ -1,7 +1,7 @@
-FROM python:3.9-alpine
+FROM python:3.10-alpine
 LABEL maintainer="Winston Astrachan"
 LABEL description="FlexGet on Alpine Linux"
-ARG FLEXGET_VERSION="3.1.128"
+ARG FLEXGET_VERSION="3.3.27"
 
 # Add users before any software to prevent UID/GID conflicts
 RUN addgroup -S -g 101 flexget; \
@@ -38,7 +38,7 @@ RUN set -eux; \
     ; \
     tar --strip-components=1 -xzvf flexget.tar.gz -C /flexget; \
     cd /flexget; \
-    python3 setup.py install; \
+    pip install .; \
     pip install deluge-client; \
     pip install transmissionrpc; \
     \
