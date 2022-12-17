@@ -1,4 +1,4 @@
-FROM python:3.10-alpine
+FROM python:3.11-alpine
 LABEL maintainer="Winston Astrachan"
 LABEL description="FlexGet on Alpine Linux"
 ARG FLEXGET_VERSION="3.5.5"
