@@ -40,7 +40,7 @@ RUN set -eux; \
     cd /flexget; \
     pip install .; \
     pip install deluge-client; \
-    pip install transmissionrpc; \
+    pip install transmission-rpc; \
     \
     rm -rf /flexget /flexget.tar.gz; \
     apk del .build-deps
