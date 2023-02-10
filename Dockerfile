@@ -1,7 +1,7 @@
 FROM python:3.11-alpine
 LABEL maintainer="Winston Astrachan"
 LABEL description="FlexGet on Alpine Linux"
-ARG FLEXGET_VERSION="3.5.5"
+ARG FLEXGET_VERSION="3.5.21"
 
 # Add users before any software to prevent UID/GID conflicts
 RUN addgroup -S -g 101 flexget; \
