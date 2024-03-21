@@ -1,4 +1,6 @@
-# ARCHIVE NOTICE: FlexGet now publishes an official docker image that has functional parity wit this image. As such, this image has been deprecated and no updates will be made. If you are attempting to run FlexGet in docker, you should look at their [documentation on running in docker](https://flexget.com/InstallWizard/Docker).
+# ARCHIVE NOTICE
+
+## FlexGet now publishes an official docker image that has functional parity with this image. As such, this image has been deprecated and no updates will be made. If you are attempting to run FlexGet in docker, you should look at their [documentation on running in docker](https://flexget.com/InstallWizard/Docker).
 
 # FlexGet Docker Image
 
